@@ -25,7 +25,7 @@ To run the program, execute the following command in your terminal in the progra
 python3 composite.py
 ```
 
-Functions that can be passed into command line after the program is run:
+Functions that can be passed into the command line after executing the program:
 - `chdir <directory>`: Change the current directory to the specified directory (`..` for parent directory).
 - `up`: Move up one level in the directory hierarchy.
 - `list`: List files and directories in the current directory.
