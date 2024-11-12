@@ -120,7 +120,7 @@ def parse_directory(data):
     return root
 
 def main():
-    with open('MyProg6TESTdirectory.dat') as f:
+    with open('dictionary_tree.dat') as f:
         data = f.read()
 
     root = parse_directory(data)
