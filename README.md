@@ -2,6 +2,40 @@
 
 This project is a command-line file system simulator built using the Composite design pattern in Python. It allows users to navigate a virtual directory structure, list files and directories, and count files at various levels of the directory hierarchy.
 
+## Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Project Overview](#project-overview)
+4. [Key Features](#key-features)
+5. [Purpose and Lessons Learned](#purpose-and-lessons-learned)
+
+## Installation
+
+To set up and run this project locally:
+
+1. **Clone the Repository:**  
+```bash
+git clone https://github.com/alex-nin/compositedesignpattern.git
+cd compositedesignpattern
+```
+2. **Install Dependencies:** Ensure you have Python 3.x installed.
+
+## Usage
+
+To run the program, execute the following command in your terminal in the program directory:
+
+```bash
+python composite.py
+```
+
+Available Commands:
+- `chdir <directory>`: Change the current directory to the specified directory (`..` for parent directory).
+- `up`: Move up one level in the directory hierarchy.
+- `list`: List files and directories in the current directory.
+- `listall`: List all files and directories recursively in the current directory and below.
+- `count`: Count the number of files in the current directory.
+- `countall`: Count the number of files recursively in the current directory and below.
+
 ## Project Overview
 
 The file system simulator includes commands for:
@@ -16,22 +50,6 @@ Where the Composite design pattern primarily comes into play is with our `File` 
 1. **Directory Traversal**: Users can navigate between directories with commands like `chdir` and `up`, simulating a real file system's folder navigation.
 2. **Listing and Counting**: Users can list files and directories in the current directory or recursively in all subdirectories. The count commands (`count`, `countall`) provide a quick way to determine the number of files in any directory level.
 3. **Composite Pattern**: By using the Composite pattern, `File` and `Directory` objects are treated uniformly as entries, allowing flexible directory operations that work on both types without needing to check the entry type explicitly.
-
-## Usage
-
-To run the program, execute the following command in your terminal in the program directory:
-
-```bash
-python3 composite.py
-```
-
-Functions that can be passed into the command line after executing the program:
-- `chdir <directory>`: Change the current directory to the specified directory (`..` for parent directory).
-- `up`: Move up one level in the directory hierarchy.
-- `list`: List files and directories in the current directory.
-- `listall`: List all files and directories recursively in the current directory and below.
-- `count`: Count the number of files in the current directory.
-- `countall`: Count the number of files recursively in the current directory and below.
 
 ## Purpose and Lessons Learned
 
